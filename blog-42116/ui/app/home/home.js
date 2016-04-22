@@ -9,10 +9,10 @@ angular.module('myApp.home', ['ngRoute'])
   });
 }])
 
-.controller('HomeCtrl', [function($scope) {
+.controller('HomeCtrl', ['$scope',function($scope) {
 		var showStuff = false;
 
-		  var friends = [
+		$scope.friends = [
     {name:'John', age:25, gender:'boy'},
     {name:'Jessie', age:30, gender:'girl'},
     {name:'Johanna', age:28, gender:'girl'},
