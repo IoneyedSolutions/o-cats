@@ -1,0 +1,8 @@
+<div class="jumbotron"><h1>This is your a~mazing Home Page</h1></div>
+<button type="button" class="btn btn-primary" ng-click="showStuff == true ? showStuff = false : showStuff = true">Primary</button>
+<div ng-show="showStuff">Some hidden stuff here!!!!<div>{{users[1].user.name}}
+</div></div>
+
+    <li class="ng-repeat" ng-repeat="friend in friends | filter:q as results">
+      [{{$index + 1}}] {{friend.name}} who is {{friend.age}} years old.
+    </li>
